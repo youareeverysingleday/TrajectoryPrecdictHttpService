@@ -1,0 +1,48 @@
+{
+    "gBounds": [
+        115.4,
+        39.4,
+        117.55,
+        41.1
+    ],
+    "gWuhanBounds": [113.68, 29.97, 115.08, 31.37],
+    "BATCH_SIZE": 2000,
+    "EPOCHS": 200,
+    "gPredictStep": 4,
+    "g_d_model": 28,
+    "gPoIFeatureLength": 16,
+    "gMapCenterPosition": [
+        39.929986,
+        116.395645
+    ],
+    "gInteractionMatrixInputPath": "./Data/Input/InteractionMatrix.csv",
+    "gOriginalSeriesInputPath": "./Data/Input/OriginalSeries.csv",
+    "gFeatureSeriesInputPath": "./Data/Input/Stay.csv",
+    "gTrajectoryMatrixInputPath": "./Data/Input/AllUsersTrajectoriesFeature.csv",
+    "gCollaborativeFilteringTopN": [
+        1,
+        3,
+        5,
+        10,
+        20,
+        40,
+        80
+    ],
+    "gTestSize": 0.2,
+    "gSimilarityCalculationAlgorithm": "CosineSimilarity",
+    "gUsersSimilaritySavePath": "./Data/Output/UsersSimilarity.csv",
+    "gCollaborativeFilteringTopNRecommendationPerformanceSavePath": "./Data/Output/TopN{}RecommendationPerformance.csv",
+    "gCollaborativeFilteringTopNPictureSavePath": "./Pictures/performance/TopN{}CF{}.png",
+    "gRefreshModel": true,
+    "gCNNModelSavePath": "./Data/Output/SaveModel/CNN/",
+    "gMLPModelSavePath": "./Data/Output/SaveModel/MLP/",
+    "gLSTMModelSavePath": "./Data/Output/SaveModel/LSTM/",
+    "gVocabulary": 100000,
+    "gTransformerNumberHeads": 9,
+    "gTransformerNumberLayers": 4,
+    "gTransformerDeepFeedForwardNeurons": 1024,
+    "gTransformerDropout": 0.2,
+    "gTransformerSavePath": "./Data/Model/Transformer/checkpoints/train",
+    "gTransformerEpochs": 100,
+    "gPreprocessDataSavePath": "./Data/Output/IntermediateData/"
+}
